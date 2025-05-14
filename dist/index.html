@@ -9,17 +9,12 @@
 </head>
 
 <body class="m-0 p-0 box-border overflow-x-clip">
-  <!-- Section for the header and the slider -->
   <section class="w-screen overflow-clip h-[100vh]">
-    <!-- div for the nav -->
     <div class="h-[10%]">
-      <!-- actual nav -->
       <nav class="flex justify-around items-center h-full w-full p-3 shadow-sm shadow-gray-300 scale-125">
-        <!-- div for the logo -->
         <div>
           <img src="/dist/img/logo.png" alt="logo" class="h-[90%] w-32 object-cover" />
         </div>
-        <!-- div for the page links -->
         <div class="hidden md:block">
           <ul class="flex justify-center items-center text-[0.7rem] font-semibold gap-2">
             <li>
@@ -29,13 +24,13 @@
               <a href="" class="text-gray-400 hover:border-b-[1px] border-solid border-blue-600">CONTENT</a>
             </li>
             <li>
-              <a href="" class="text-gray-400 hover:border-b-[1px] border-solid border-blue-600">STORIES</a>
+              <a href="gallery.html" class="text-gray-400 hover:border-b-[1px] border-solid border-blue-600">TRENDINGS</a>
             </li>
             <li>
               <a href="" class="text-gray-400 hover:border-b-[1px] border-solid border-blue-600">GUIDES</a>
             </li>
             <li>
-              <a href="" class="text-gray-400 hover:border-b-[1px] border-solid border-blue-600">GALLERY</a>
+              <a href="#gallery" class="text-gray-400 hover:border-b-[1px] border-solid border-blue-600">GALLERY</a>
             </li>
             <li>
               <a href="" class="text-gray-400 hover:border-b-[1px] border-solid border-blue-600">ABOUT US</a>
@@ -45,46 +40,37 @@
             </li>
           </ul>
         </div>
-        <!-- div for responsiveness -->
         <div class="hidden md:block">
-          <!-- div for the social links -->
           <div class="flex justify-center items-center gap-3">
-            <!-- list of the social links -->
             <ul class="flex justify-center items-center gap-1">
-              <!-- facebook img -->
               <li>
                 <a href="">
                   <img class="size-3" src="/dist/img/icons8-facebook-logo-50 (2).png" alt="" />
                 </a>
               </li>
-              <!-- Instagram img -->
               <li>
                 <a href=""><img class="size-3 object-cover" src="/dist/img/icons8-instagram-50 (2).png" alt="" /></a>
               </li>
-              <!-- youtube img -->
+
               <li>
                 <a href=""><img src="/dist/img/icons8-youtube-50 (2).png" class="size-3 object-cover" alt="" /></a>
               </li>
-              <!-- Twitter img -->
+
               <li>
                 <a href=""><img src="/dist/img/icons8-twitter-50 (2).png" class="size-3 object-cover" alt="" /></a>
               </li>
-              <!-- Tik-tok img -->
               <li>
                 <a href=""><img src="/dist/img/icons8-tik-tok-24.png" class="size-3 object-cover" alt="" /></a>
               </li>
             </ul>
-            <!-- small search button -->
             <div>
               <img src="/dist/img/icons8-search-50 (1).png" class="object-cover size-4 cursor-pointer" alt="" />
             </div>
           </div>
         </div>
-        <!-- reponsive side of nav -->
         <div class="md:hidden block">
           <div class="flex justify-center gap-1 items-center">
             <div class="text-gray-400">MENU</div>
-            <!-- Hamburger -->
             <div class="flex flex-col justify-center gap-[2px]">
               <div class="w-[25px] h-[3px] rounded-full bg-[#17005e]"></div>
               <div class="w-[25px] h-[3px] rounded-full bg-[#17005e]"></div>
@@ -94,7 +80,6 @@
         </div>
       </nav>
     </div>
-    <!-- div for the main sliding window -->
     <div class="h-[95%]">
       <div id="slider" class="max-w-[100vw] h-[100%]">
         <ul id="list" class="relative flex w-max h-full overflow-x-auto scroll-smooth snap-x snap-mandatory">
@@ -120,14 +105,12 @@
           </li>
         </ul>
       </div>
-      <!-- Buttons for prev and next -->
       <div class="hidden md:block">
         <div class="absolute top-[50%] left-[5%] w-[90%] flex justify-between">
           <button id="prev"
             class="brightness-105 hover:brightness-90 size-12 bg-[#fff5] text-white rounded-[20px] font-mono font-bold flex justify-center items-center">
             <img src="/dist/img/icons8-swap-100.png" class="size-4" alt="" />
           </button>
-          <!-- search bar inbetween -->
           <form action="" class="flex justify-center items-center gap-2">
             <input placeholder="your gate-way through time.." type="text"
               class="w-96 p-5 h-12 rounded-full focus:outline-none text-gray-700" />
@@ -142,17 +125,14 @@
           </button>
         </div>
       </div>
-      <!-- Dots for navigation -->
       <div id="dots" class="z-20">
         <ul id="dotList" class="absolute bottom-10 left-0 w-full m-0 p-0 flex justify-center gap-3">
-          <!-- JavaScript will create dots here -->
         </ul>
       </div>
     </div>
   </section>
   <h2 class="font-extrabold text-4xl p-[20px]">LATEST POSTS</h2>
   <div class="">
-    <!--first section POLITICS-->
     <h3 class="font-extrabold text-2xl p-[20px]">POLITICS</h3>
     <section class="bg-gray-100 flex items-center justify-center min-h-screen">
       <div>
@@ -270,8 +250,6 @@
         </div>
       </div>
     </section>
-
-    <!--second section CRISIS-->
     <h3 class="font-extrabold text-2xl p-[20px]">CRISIS</h3>
     <section class="bg-gray-100 flex items-center justify-center min-h-screen">
       <div>
@@ -384,8 +362,6 @@
         </div>
       </div>
     </section>
-
-    <!--third section SPORTS-->
     <h3 class="font-extrabold text-2xl p-[20px]">SPORTS</h3>
     <section class="bg-gray-100 flex items-center justify-center min-h-screen">
       <div>
@@ -500,8 +476,6 @@
         </div>
       </div>
     </section>
-
-    <!--fourth section TECHNOLOGY-->
     <h3 class="font-extrabold text-2xl p-[20px]">TECHNOLOGY</h3>
     <section class="bg-gray-100 flex items-center justify-center min-h-screen">
       <div>
@@ -614,11 +588,13 @@
         </div>
       </div>
     </section>
+     <div class="flex justify-center mb-10">
+         <a href="gallery.html"> <button class="bg-black text-white px-6 py-2 rounded text-sm tracking-wide hover:bg-gray-800 transition">
+            SEE ALL →
+          </button></a>
+        </div>
 
-    <!-- Trending Posts Section Begins -->
-    
-    
-  <script src="./script.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
