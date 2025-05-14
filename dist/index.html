@@ -1,255 +1,731 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <link href="./style.css" rel="stylesheet">
-</head>
-<body>
-   <h2 class="font-extrabold text-4xl p-[20px]">LATEST POSTS</h2>
-  <div class="">
-    <!--first section POLITICS-->
-   <h3 class="font-extrabold text-2xl p-[20px]" >POLITICS</h3>
-<section  class="bg-gray-100 flex items-center justify-center min-h-screen">
-    
-    <div>
-      <div class="flex gap-5 mx-5 my-10">
-        <span class="flex-col">
-        <img src="/dist/img/politics-1.png"  class="h-[50vh] w-full transition-transform duration-500 ease-in-out hover:scale-110 hover:rounded-xl">
-        <figcaption>
-          <h3 class="font-extrabold tex-xl p-[10px]">American Politics</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus nobis ullam, nesciunt dolores in voluptatum odit, eum itaque, ipsum libero omnis quisquam officiis et dolorum non explicabo mollitia! Suscipit, voluptates!</p>
-        </figcaption>
-        </span>
-        
-        <span class="flex-col">
-         <img src="/dist/img/politics-2.png" class="h-[50vh] w-full transition-transform duration-500 ease-in-out hover:scale-110 hover:rounded-xl">
-        <figcaption>
-          <h3 class="font-extrabold tex-xl p-[10px]">Nigeria Protest</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus nobis ullam, nesciunt dolores in voluptatum odit, eum itaque, ipsum libero omnis quisquam officiis et dolorum non explicabo mollitia! Suscipit, voluptates!</p>
-        </figcaption>
-        </span>
-        
-        <span class="flex-col">
-         <img src="/dist/img/politics-3.png" class="h-[50vh] w-full transition-transform duration-500 ease-in-out hover:scale-110 hover:rounded-xl">
-        <figcaption>
-          <h3 class="font-extrabold tex-xl p-[10px]">Revolution in Nigeria?</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus nobis ullam, nesciunt dolores in voluptatum odit, eum itaque, ipsum libero omnis quisquam officiis et dolorum non explicabo mollitia! Suscipit, voluptates!</p>
-        </figcaption>
-        </span>
-      </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-
-      <div class="flex gap-5 mx-5 my-10">
-        <span class="flex-col">
-        <img src="/dist/img/politics-4.png" class="h-[50vh] w-full transition-transform duration-500 ease-in-out hover:scale-110 hover:rounded-xl">
-        <figcaption>
-          <h3 class="font-extrabold tex-xl p-[10px]">African bad governance</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus nobis ullam, nesciunt dolores in voluptatum odit, eum itaque, ipsum libero omnis quisquam officiis et dolorum non explicabo mollitia! Suscipit, voluptates!</p>
-        </figcaption>
-        </span>
-        
-        <span class="flex-col">
-         <img src="/dist/img/politics-5.png" class="h-[50vh] w-full transition-transform duration-500 ease-in-out hover:scale-110 hover:rounded-xl">
-        <figcaption>
-          <h3 class="font-extrabold tex-xl p-[10px]">Portugal New President</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus nobis ullam, nesciunt dolores in voluptatum odit, eum itaque, ipsum libero omnis quisquam officiis et dolorum non explicabo mollitia! Suscipit, voluptates!</p>
-        </figcaption>
-        </span>
-        
-        <span class="flex-col">
-         <img src="/dist/img/politics-6.png" class="h-[50vh] w-full transition-transform duration-500 ease-in-out hover:scale-110 hover:rounded-xl">
-        <figcaption>
-          <h3 class="font-extrabold tex-xl p-[10px]">Protest in the US</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus nobis ullam, nesciunt dolores in voluptatum odit, eum itaque, ipsum libero omnis quisquam officiis et dolorum non explicabo mollitia! Suscipit, voluptates!</p>
-        </figcaption>
-        </span>
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body class="m-0 p-0 box-border overflow-x-clip">
+    <!-- Section for the header and the slider -->
+    <section class="w-screen overflow-clip h-[100vh]">
+      <!-- div for the nav -->
+      <div class="h-[10%]">
+        <!-- actual nav -->
+        <nav
+          class="flex justify-around items-center h-full w-full p-3 shadow-sm shadow-gray-300 scale-125">
+          <!-- div for the logo -->
+          <div>
+            <img
+              src="/dist/img/logo.png"
+              alt="logo"
+              class="h-[90%] w-32 object-cover" />
+          </div>
+          <!-- div for the page links -->
+          <div class="hidden md:block">
+            <ul
+              class="flex justify-center items-center text-[0.7rem] font-semibold gap-2">
+              <li>
+                <a
+                  href=""
+                  class="text-blue-400 font-bold hover:border-b-2 border-solid border-blue-600"
+                  >HOME</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-gray-400 hover:border-b-[1px] border-solid border-blue-600"
+                  >CONTENT</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-gray-400 hover:border-b-[1px] border-solid border-blue-600"
+                  >STORIES</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-gray-400 hover:border-b-[1px] border-solid border-blue-600"
+                  >GUIDES</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-gray-400 hover:border-b-[1px] border-solid border-blue-600"
+                  >GALLERY</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-gray-400 hover:border-b-[1px] border-solid border-blue-600"
+                  >ABOUT US</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-gray-400 hover:border-b-[1px] border-solid border-blue-600"
+                  >CONTACT</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- div for responsiveness -->
+          <div class="hidden md:block">
+            <!-- div for the social links -->
+            <div class="flex justify-center items-center gap-3">
+              <!-- list of the social links -->
+              <ul class="flex justify-center items-center gap-1">
+                <!-- facebook img -->
+                <li>
+                  <a href="">
+                    <img
+                      class="size-3"
+                      src="/dist/img/icons8-facebook-logo-50 (2).png"
+                      alt="" />
+                  </a>
+                </li>
+                <!-- Instagram img -->
+                <li>
+                  <a href=""
+                    ><img
+                      class="size-3 object-cover"
+                      src="/dist/img/icons8-instagram-50 (2).png"
+                      alt=""
+                  /></a>
+                </li>
+                <!-- youtube img -->
+                <li>
+                  <a href=""
+                    ><img
+                      src="/dist/img/icons8-youtube-50 (2).png"
+                      class="size-3 object-cover"
+                      alt=""
+                  /></a>
+                </li>
+                <!-- Twitter img -->
+                <li>
+                  <a href=""
+                    ><img
+                      src="/dist/img/icons8-twitter-50 (2).png"
+                      class="size-3 object-cover"
+                      alt=""
+                  /></a>
+                </li>
+                <!-- Tik-tok img -->
+                <li>
+                  <a href=""
+                    ><img
+                      src="/dist/img/icons8-tik-tok-24.png"
+                      class="size-3 object-cover"
+                      alt=""
+                  /></a>
+                </li>
+              </ul>
+              <!-- small search button -->
+              <div>
+                <img
+                  src="/dist/img/icons8-search-50 (1).png"
+                  class="object-cover size-4 cursor-pointer"
+                  alt="" />
+              </div>
+            </div>
+          </div>
+          <!-- reponsive side of nav -->
+          <div class="md:hidden block">
+            <div class="flex justify-center gap-1 items-center">
+              <div class="text-gray-400">MENU</div>
+              <!-- Hamburger -->
+              <div class="flex flex-col justify-center gap-[2px]">
+                <div class="w-[25px] h-[3px] rounded-full bg-[#17005e]"></div>
+                <div class="w-[25px] h-[3px] rounded-full bg-[#17005e]"></div>
+                <div class="w-[25px] h-[3px] rounded-full bg-[#17005e]"></div>
+              </div>
+            </div>
+          </div>
+        </nav>
       </div>
+      <!-- div for the main sliding window -->
+      <div class="h-[95%]">
+        <div id="slider" class="max-w-[100vw] h-[100%]">
+          <ul
+            id="list"
+            class="relative flex w-max h-full overflow-x-auto scroll-smooth snap-x snap-mandatory">
+            <li>
+              <img
+                class="w-[100vw] h-full object-cover snap-start"
+                src="/dist/img/8248850.jpg"
+                alt="" />
+            </li>
+            <li>
+              <img
+                src="/dist/img/stack-newspapers-magazines.jpg"
+                alt=""
+                class="w-[100vw] h-full object-cover snap-start" />
+            </li>
+            <li>
+              <img
+                class="w-[100vw] h-full object-cover snap-start"
+                src="/dist/img/displeased-black-woman-crowd-people-demonstrating-against-racism-city-streets.jpg"
+                alt="" />
+            </li>
+            <li>
+              <img
+                class="w-[100vw] h-full object-cover snap-start"
+                src="/dist/img/medium-shot-man-wearing-vr-glasses.jpg"
+                alt="" />
+            </li>
+            <li>
+              <img
+                class="w-[100vw] h-full object-cover snap-start"
+                src="/dist/img/professional-cyclist-woman.jpg"
+                alt="" />
+            </li>
+          </ul>
+        </div>
+        <!-- Buttons for prev and next -->
+        <div class="hidden md:block">
+          <div
+            class="absolute top-[50%] left-[5%] w-[90%] flex justify-between">
+            <button
+              id="prev"
+              class="brightness-105 hover:brightness-90 size-12 bg-[#fff5] text-white rounded-[20px] font-mono font-bold flex justify-center items-center">
+              <img src="/dist/img/icons8-swap-100.png" class="size-4" alt="" />
+            </button>
+            <!-- search bar inbetween -->
+            <form action="" class="flex justify-center items-center gap-2">
+              <input
+                placeholder="your gate-way through time.."
+                type="text"
+                class="w-96 p-5 h-12 rounded-full focus:outline-none text-gray-700" />
+              <button
+                type="submit"
+                class="hover:brightness-150 bg-[#fff5] size-12 flex justify-center items-center rounded-full">
+                <img
+                  src="/dist/img/icons8-search-50 (1).png"
+                  class="size-4"
+                  alt="" />
+              </button>
+            </form>
+            <button
+              id="next"
+              class="brightness-105 hover:brightness-90 size-12 bg-[#fff5] text-white rounded-[20px] font-mono font-bold flex justify-center items-center">
+              <img
+                src="/dist/img/icons8-swap-100.png"
+                class="rotate-180 size-4"
+                alt="" />
+            </button>
+          </div>
+        </div>
+        <!-- Dots for navigation -->
+        <div id="dots" class="z-20">
+          <ul
+            id="dotList"
+            class="absolute bottom-10 left-0 w-full m-0 p-0 flex justify-center gap-3">
+            <!-- JavaScript will create dots here -->
+          </ul>
+        </div>
+      </div>
+    </section>
+    <h2 class="font-extrabold text-4xl p-[20px]">LATEST POSTS</h2>
+    <div class="">
+      <!--first section POLITICS-->
+      <h3 class="font-extrabold text-2xl p-[20px]">POLITICS</h3>
+      <section
+        class="bg-gray-100 flex items-center justify-center min-h-screen">
+        <div>
+          <div class="flex gap-5 mx-5 my-10">
+            <span class="flex-col">
+              <div class="overflow-hidden">
+                <img
+                  src="/dist/img/politics-1.png"
+                  class="h-[50vh] w-full transition-transform duration-500 ease-in-out hover:scale-110" />
+              </div>
+
+              <figcaption>
+                <h3 class="font-extrabold tex-xl p-[10px]">
+                  American Politics
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ducimus nobis ullam, nesciunt dolores in voluptatum odit, eum
+                  itaque, ipsum libero omnis quisquam officiis et dolorum non
+                  explicabo mollitia! Suscipit, voluptates!
+                </p>
+              </figcaption>
+            </span>
+
+            <span class="flex-col">
+              <div class="overflow-hidden">
+                <img
+                  src="/dist/img/politics-2.png"
+                  class="h-[50vh] w-full transition-transform duration-500 ease-in-out hover:scale-110" />
+              </div>
+
+              <figcaption>
+                <h3 class="font-extrabold tex-xl p-[10px]">Nigeria Protest</h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ducimus nobis ullam, nesciunt dolores in voluptatum odit, eum
+                  itaque, ipsum libero omnis quisquam officiis et dolorum non
+                  explicabo mollitia! Suscipit, voluptates!
+                </p>
+              </figcaption>
+            </span>
+
+            <span class="flex-col">
+              <div class="overflow-hidden">
+                <img
+                  src="/dist/img/politics-3.png"
+                  class="h-[50vh] w-full transition-transform duration-500 ease-in-out hover:scale-110" />
+              </div>
+
+              <figcaption>
+                <h3 class="font-extrabold tex-xl p-[10px]">
+                  Revolution in Nigeria?
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ducimus nobis ullam, nesciunt dolores in voluptatum odit, eum
+                  itaque, ipsum libero omnis quisquam officiis et dolorum non
+                  explicabo mollitia! Suscipit, voluptates!
+                </p>
+              </figcaption>
+            </span>
+          </div>
+
+          <div class="flex gap-5 mx-5 my-10">
+            <span class="flex-col">
+              <div class="overflow-hidden">
+                <img
+                  src="/dist/img/politics-4.png"
+                  class="h-[50vh] w-full transition-transform duration-500 ease-in-out hover:scale-110" />
+              </div>
+              <figcaption>
+                <h3 class="font-extrabold tex-xl p-[10px]">
+                  African bad governance
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ducimus nobis ullam, nesciunt dolores in voluptatum odit, eum
+                  itaque, ipsum libero omnis quisquam officiis et dolorum non
+                  explicabo mollitia! Suscipit, voluptates!
+                </p>
+              </figcaption>
+            </span>
+
+            <span class="flex-col">
+              <div class="overflow-hidden">
+                <img
+                  src="/dist/img/politics-5.png"
+                  class="h-[50vh] w-full transition-transform duration-500 ease-in-out hover:scale-110" />
+              </div>
+              <figcaption>
+                <h3 class="font-extrabold tex-xl p-[10px]">
+                  Portugal New President
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ducimus nobis ullam, nesciunt dolores in voluptatum odit, eum
+                  itaque, ipsum libero omnis quisquam officiis et dolorum non
+                  explicabo mollitia! Suscipit, voluptates!
+                </p>
+              </figcaption>
+            </span>
+
+            <span class="flex-col">
+              <div class="overflow-hidden">
+                <img
+                  src="/dist/img/politics-6.png"
+                  class="h-[50vh] w-full transition-transform duration-500 ease-in-out hover:scale-110" />
+              </div>
+              <figcaption>
+                <h3 class="font-extrabold tex-xl p-[10px]">
+                  Protest in the US
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ducimus nobis ullam, nesciunt dolores in voluptatum odit, eum
+                  itaque, ipsum libero omnis quisquam officiis et dolorum non
+                  explicabo mollitia! Suscipit, voluptates!
+                </p>
+              </figcaption>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!--second section CRISIS-->
+      <h3 class="font-extrabold text-2xl p-[20px]">CRISIS</h3>
+      <section
+        class="bg-gray-100 flex items-center justify-center min-h-screen">
+        <div>
+          <div class="flex gap-5 mx-5 my-10">
+            <span class="flex-col">
+              <div class="overflow-hidden">
+                <img
+                  src="/dist/img/crisis.png"
+                  class="h-[50vh] w-full transition-transform duration-500 ease-in-out hover:scale-110" />
+              </div>
+              <figcaption>
+                <h3 class="font-extrabold tex-xl p-[10px]">
+                  American Troops in Seria
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ducimus nobis ullam, nesciunt dolores in voluptatum odit, eum
+                  itaque, ipsum libero omnis quisquam officiis et dolorum non
+                  explicabo mollitia! Suscipit, voluptates!
+                </p>
+              </figcaption>
+            </span>
+
+            <span class="flex-col">
+              <div class="overflow-hidden">
+                <img
+                  src="/dist/img/crisis-2.png"
+                  class="h-[50vh] w-full transition-transform duration-500 ease-in-out hover:scale-110" />
+              </div>
+              <figcaption>
+                <h3 class="font-extrabold tex-xl p-[10px]">
+                  IDF destroy another Hamas hide-out
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ducimus nobis ullam, nesciunt dolores in voluptatum odit, eum
+                  itaque, ipsum libero omnis quisquam officiis et dolorum non
+                  explicabo mollitia! Suscipit, voluptates!
+                </p>
+              </figcaption>
+            </span>
+
+            <span class="flex-col">
+              <div class="overflow-hidden">
+                <img
+                  src="/dist/img/crisis-3.png"
+                  class="h-[50vh] w-full transition-transform duration-500 ease-in-out hover:scale-110" />
+              </div>
+              <figcaption>
+                <h3 class="font-extrabold tex-xl p-[10px]">
+                  Fresh protest in Seria
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ducimus nobis ullam, nesciunt dolores in voluptatum odit, eum
+                  itaque, ipsum libero omnis quisquam officiis et dolorum non
+                  explicabo mollitia! Suscipit, voluptates!
+                </p>
+              </figcaption>
+            </span>
+          </div>
+
+          <div class="flex gap-5 mx-5 my-10">
+            <span class="flex-col">
+              <div class="overflow-hidden">
+                <img
+                  src="/dist/img/crisis-4.png"
+                  class="h-[50vh] w-full transition-transform duration-500 ease-in-out hover:scale-110" />
+              </div>
+              <figcaption>
+                <h3 class="font-extrabold tex-xl p-[10px]">Gaza reminants</h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ducimus nobis ullam, nesciunt dolores in voluptatum odit, eum
+                  itaque, ipsum libero omnis quisquam officiis et dolorum non
+                  explicabo mollitia! Suscipit, voluptates!
+                </p>
+              </figcaption>
+            </span>
+
+            <span class="flex-col">
+              <div class="overflow-hidden">
+                <img
+                  src="/dist/img/crisis-5.png"
+                  class="h-[50vh] w-full transition-transform duration-500 ease-in-out hover:scale-110" />
+              </div>
+              <figcaption>
+                <h3 class="font-extrabold tex-xl p-[10px]">Israel Ceasefire</h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ducimus nobis ullam, nesciunt dolores in voluptatum odit, eum
+                  itaque, ipsum libero omnis quisquam officiis et dolorum non
+                  explicabo mollitia! Suscipit, voluptates!
+                </p>
+              </figcaption>
+            </span>
+
+            <span class="flex-col">
+              <div class="overflow-hidden">
+                <img
+                  src="/dist/img/crisis-6.png"
+                  class="h-[50vh] w-full transition-transform duration-500 ease-in-out hover:scale-110" />
+              </div>
+              <figcaption>
+                <h3 class="font-extrabold tex-xl p-[10px]">
+                  Plastinians displaced
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ducimus nobis ullam, nesciunt dolores in voluptatum odit, eum
+                  itaque, ipsum libero omnis quisquam officiis et dolorum non
+                  explicabo mollitia! Suscipit, voluptates!
+                </p>
+              </figcaption>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!--third section SPORTS-->
+      <h3 class="font-extrabold text-2xl p-[20px]">SPORTS</h3>
+      <section
+        class="bg-gray-100 flex items-center justify-center min-h-screen">
+        <div>
+          <div class="flex gap-5 mx-5 my-10">
+            <span class="flex-col">
+              <div class="overflow-hidden">
+                <img
+                  src="/dist/img/sports-1.png"
+                  class="h-[50vh] w-full transition-transform duration-500 ease-in-out hover:scale-110" />
+              </div>
+              <figcaption>
+                <h3 class="font-extrabold tex-xl p-[10px]">
+                  South Africa beats America in Rugby match
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ducimus nobis ullam, nesciunt dolores in voluptatum odit, eum
+                  itaque, ipsum libero omnis quisquam officiis et dolorum non
+                  explicabo mollitia! Suscipit, voluptates!
+                </p>
+              </figcaption>
+            </span>
+
+            <span class="flex-col">
+              <div class="overflow-hidden">
+                <img
+                  src="/dist/img/sports-2.png"
+                  class="h-[50vh] w-full transition-transform duration-500 ease-in-out hover:scale-110" />
+              </div>
+              <figcaption>
+                <h3 class="font-extrabold tex-xl p-[10px]">Iceland Games</h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ducimus nobis ullam, nesciunt dolores in voluptatum odit, eum
+                  itaque, ipsum libero omnis quisquam officiis et dolorum non
+                  explicabo mollitia! Suscipit, voluptates!
+                </p>
+              </figcaption>
+            </span>
+
+            <span class="flex-col">
+              <div class="overflow-hidden">
+                <img
+                  src="/dist/img/sports-3.png"
+                  class="h-[50vh] w-full transition-transform duration-500 ease-in-out hover:scale-110" />
+              </div>
+              <figcaption>
+                <h3 class="font-extrabold tex-xl p-[10px]">
+                  FIFA approve new football rules
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ducimus nobis ullam, nesciunt dolores in voluptatum odit, eum
+                  itaque, ipsum libero omnis quisquam officiis et dolorum non
+                  explicabo mollitia! Suscipit, voluptates!
+                </p>
+              </figcaption>
+            </span>
+          </div>
+
+          <div class="flex gap-5 mx-5 my-10">
+            <span class="flex-col"
+              ><div class="overflow-hidden">
+                <img
+                  src="/dist/img/sports-4.png"
+                  class="h-[50vh] w-full transition-transform duration-500 ease-in-out hover:scale-110" />
+              </div>
+              <figcaption>
+                <h3 class="font-extrabold tex-xl p-[10px]">
+                  India the best in cricket?
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ducimus nobis ullam, nesciunt dolores in voluptatum odit, eum
+                  itaque, ipsum libero omnis quisquam officiis et dolorum non
+                  explicabo mollitia! Suscipit, voluptates!
+                </p>
+              </figcaption>
+            </span>
+
+            <span class="flex-col">
+              <div class="overflow-hidden">
+                <img
+                  src="/dist/img/sports-5.png"
+                  class="h-[50vh] w-full transition-transform duration-500 ease-in-out hover:scale-110" />
+              </div>
+              <figcaption>
+                <h3 class="font-extrabold tex-xl p-[10px]">
+                  Others sports to be considerd in the next RIO Olympic
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ducimus nobis ullam, nesciunt dolores in voluptatum odit, eum
+                  itaque, ipsum libero omnis quisquam officiis et dolorum non
+                  explicabo mollitia! Suscipit, voluptates!
+                </p>
+              </figcaption>
+            </span>
+
+            <span class="flex-col">
+              <div class="overflow-hidden">
+                <img
+                  src="/dist/img/sports-6.png"
+                  class="h-[50vh] w-full transition-transform duration-500 ease-in-out hover:scale-110" />
+              </div>
+              <figcaption>
+                <h3 class="font-extrabold tex-xl p-[10px]">
+                  Taekwondo Over Boxing
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ducimus nobis ullam, nesciunt dolores in voluptatum odit, eum
+                  itaque, ipsum libero omnis quisquam officiis et dolorum non
+                  explicabo mollitia! Suscipit, voluptates!
+                </p>
+              </figcaption>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!--fourth section TECHNOLOGY-->
+      <h3 class="font-extrabold text-2xl p-[20px]">TECHNOLOGY</h3>
+      <section
+        class="bg-gray-100 flex items-center justify-center min-h-screen">
+        <div>
+          <div class="flex gap-5 mx-5 my-10">
+            <span class="flex-col">
+              <div class="overflow-hidden">
+                <img
+                  src="/dist/img/tech-1.png"
+                  class="h-[50vh] w-full transition-transform duration-500 ease-in-out hover:scale-110" />
+              </div>
+              <figcaption>
+                <h3 class="font-extrabold tex-xl p-[10px]">
+                  Nigeria Ruling the Tech world
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ducimus nobis ullam, nesciunt dolores in voluptatum odit, eum
+                  itaque, ipsum libero omnis quisquam officiis et dolorum non
+                  explicabo mollitia! Suscipit, voluptates!
+                </p>
+              </figcaption>
+            </span>
+
+            <span class="flex-col">
+              <div class="overflow-hidden">
+                <img
+                  src="/dist/img/tech-2.png"
+                  class="h-[50vh] w-full transition-transform duration-500 ease-in-out hover:scale-110" />
+              </div>
+              <figcaption>
+                <h3 class="font-extrabold tex-xl p-[10px]">
+                  Blockfuse Labs latest colaborations
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ducimus nobis ullam, nesciunt dolores in voluptatum odit, eum
+                  itaque, ipsum libero omnis quisquam officiis et dolorum non
+                  explicabo mollitia! Suscipit, voluptates!
+                </p>
+              </figcaption>
+            </span>
+
+            <span class="flex-col">
+              <div class="overflow-hidden">
+                <img
+                  src="/dist/img/tech-3.png"
+                  class="h-[50vh] w-full transition-transform duration-500 ease-in-out hover:scale-110" />
+              </div>
+              <figcaption>
+                <h3 class="font-extrabold tex-xl p-[10px]">Exploring mars</h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ducimus nobis ullam, nesciunt dolores in voluptatum odit, eum
+                  itaque, ipsum libero omnis quisquam officiis et dolorum non
+                  explicabo mollitia! Suscipit, voluptates!
+                </p>
+              </figcaption>
+            </span>
+          </div>
+
+          <div class="flex gap-5 mx-5 my-10">
+            <span class="flex-col">
+              <div class="overflow-hidden">
+                <img
+                  src="/dist/img/tech-4.png"
+                  class="h-[50vh] w-full transition-transform duration-500 ease-in-out hover:scale-110" />
+              </div>
+              <figcaption>
+                <h3 class="font-extrabold tex-xl p-[10px]">
+                  Electric panels to be replaced with new inventions
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ducimus nobis ullam, nesciunt dolores in voluptatum odit, eum
+                  itaque, ipsum libero omnis quisquam officiis et dolorum non
+                  explicabo mollitia! Suscipit, voluptates!
+                </p>
+              </figcaption>
+            </span>
+
+            <span class="flex-col">
+              <div class="overflow-hidden">
+                <img
+                  src="/dist/img/tech-5.png"
+                  class="h-[50vh] w-full transition-transform duration-500 ease-in-out hover:scale-110" />
+              </div>
+              <figcaption>
+                <h3 class="font-extrabold tex-xl p-[10px]">ZH45-Bulb</h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ducimus nobis ullam, nesciunt dolores in voluptatum odit, eum
+                  itaque, ipsum libero omnis quisquam officiis et dolorum non
+                  explicabo mollitia! Suscipit, voluptates!
+                </p>
+              </figcaption>
+            </span>
+
+            <span class="flex-col">
+              <div class="overflow-hidden">
+                <img
+                  src="/dist/img/tech-6.png"
+                  class="h-[50vh] w-full transition-transform duration-500 ease-in-out hover:scale-110" />
+              </div>
+              <figcaption>
+                <h3 class="font-extrabold tex-xl p-[10px]">
+                  2025 new inventions
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ducimus nobis ullam, nesciunt dolores in voluptatum odit, eum
+                  itaque, ipsum libero omnis quisquam officiis et dolorum non
+                  explicabo mollitia! Suscipit, voluptates!
+                </p>
+              </figcaption>
+            </span>
+          </div>
+        </div>
+      </section>
     </div>
- </section>
-
-     <!--second section CRISIS-->
-   <h3 class="font-extrabold text-2xl p-[20px]" >CRISIS</h3>
-<section  class="bg-gray-100 flex items-center justify-center min-h-screen">
-    
-    <div>
-      <div class="flex gap-5 mx-5 my-10">
-        <span class="flex-col">
-        <img src="/dist/img/crisis.png"  class="h-[50vh] w-full transition-transform duration-500 ease-in-out hover:scale-110 hover:rounded-xl">
-        <figcaption>
-          <h3 class="font-extrabold tex-xl p-[10px]">American Troops in Seria</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus nobis ullam, nesciunt dolores in voluptatum odit, eum itaque, ipsum libero omnis quisquam officiis et dolorum non explicabo mollitia! Suscipit, voluptates!</p>
-        </figcaption>
-        </span>
-        
-        <span class="flex-col">
-         <img src="/dist/img/crisis-2.png" class="h-[50vh] w-full transition-transform duration-500 ease-in-out hover:scale-110 hover:rounded-xl">
-        <figcaption>
-          <h3 class="font-extrabold tex-xl p-[10px]">IDF destroy another Hamas hide-out</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus nobis ullam, nesciunt dolores in voluptatum odit, eum itaque, ipsum libero omnis quisquam officiis et dolorum non explicabo mollitia! Suscipit, voluptates!</p>
-        </figcaption>
-        </span>
-        
-        <span class="flex-col">
-         <img src="/dist/img/crisis-3.png" class="h-[50vh] w-full transition-transform duration-500 ease-in-out hover:scale-110 hover:rounded-xl">
-        <figcaption>
-          <h3 class="font-extrabold tex-xl p-[10px]">Fresh protest in Seria</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus nobis ullam, nesciunt dolores in voluptatum odit, eum itaque, ipsum libero omnis quisquam officiis et dolorum non explicabo mollitia! Suscipit, voluptates!</p>
-        </figcaption>
-        </span>
-      </div>
-
-
-      <div class="flex gap-5 mx-5 my-10">
-        <span class="flex-col">
-        <img src="/dist/img/crisis-4.png" class="h-[50vh] w-full transition-transform duration-500 ease-in-out hover:scale-110 hover:rounded-xl">
-        <figcaption>
-          <h3 class="font-extrabold tex-xl p-[10px]">Gaza reminants</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus nobis ullam, nesciunt dolores in voluptatum odit, eum itaque, ipsum libero omnis quisquam officiis et dolorum non explicabo mollitia! Suscipit, voluptates!</p>
-        </figcaption>
-        </span>
-        
-        <span class="flex-col">
-         <img src="/dist/img/crisis-5.png" class="h-[50vh] w-full transition-transform duration-500 ease-in-out hover:scale-110 hover:rounded-xl">
-        <figcaption>
-          <h3 class="font-extrabold tex-xl p-[10px]">Israel Ceasefire</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus nobis ullam, nesciunt dolores in voluptatum odit, eum itaque, ipsum libero omnis quisquam officiis et dolorum non explicabo mollitia! Suscipit, voluptates!</p>
-        </figcaption>
-        </span>
-        
-        <span class="flex-col">
-         <img src="/dist/img/crisis-6.png" class="h-[50vh] w-full transition-transform duration-500 ease-in-out hover:scale-110 hover:rounded-xl">
-        <figcaption>
-          <h3 class="font-extrabold tex-xl p-[10px]">Plastinians displaced</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus nobis ullam, nesciunt dolores in voluptatum odit, eum itaque, ipsum libero omnis quisquam officiis et dolorum non explicabo mollitia! Suscipit, voluptates!</p>
-        </figcaption>
-        </span>
-      </div>
-    </div>
- </section>
-
-   <!--third section SPORTS-->
-   <h3 class="font-extrabold text-2xl p-[20px]" >SPORTS</h3>
-<section  class="bg-gray-100 flex items-center justify-center min-h-screen">
-    
-    <div>
-      <div class="flex gap-5 mx-5 my-10">
-        <span class="flex-col">
-        <img src="/dist/img/sports-1.png"  class="h-[50vh] w-full transition-transform duration-500 ease-in-out hover:scale-110 hover:rounded-xl">
-        <figcaption>
-          <h3 class="font-extrabold tex-xl p-[10px]">South Africa beats America in Rugby match</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus nobis ullam, nesciunt dolores in voluptatum odit, eum itaque, ipsum libero omnis quisquam officiis et dolorum non explicabo mollitia! Suscipit, voluptates!</p>
-        </figcaption>
-        </span>
-        
-        <span class="flex-col">
-         <img src="/dist/img/sports-2.png" class="h-[50vh] w-full transition-transform duration-500 ease-in-out hover:scale-110 hover:rounded-xl">
-        <figcaption>
-          <h3 class="font-extrabold tex-xl p-[10px]">Iceland Games </h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus nobis ullam, nesciunt dolores in voluptatum odit, eum itaque, ipsum libero omnis quisquam officiis et dolorum non explicabo mollitia! Suscipit, voluptates!</p>
-        </figcaption>
-        </span>
-        
-        <span class="flex-col">
-         <img src="/dist/img/sports-3.png" class="h-[50vh] w-full transition-transform duration-500 ease-in-out hover:scale-110 hover:rounded-xl">
-        <figcaption>
-          <h3 class="font-extrabold tex-xl p-[10px]">FIFA approve new football rules</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus nobis ullam, nesciunt dolores in voluptatum odit, eum itaque, ipsum libero omnis quisquam officiis et dolorum non explicabo mollitia! Suscipit, voluptates!</p>
-        </figcaption>
-        </span>
-      </div>
-
-
-      <div class="flex gap-5 mx-5 my-10">
-        <span class="flex-col">
-        <img src="/dist/img/sports-4.png" class="h-[50vh] w-full transition-transform duration-500 ease-in-out hover:scale-110 hover:rounded-xl">
-        <figcaption>
-          <h3 class="font-extrabold tex-xl p-[10px]">India the best in cricket?</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus nobis ullam, nesciunt dolores in voluptatum odit, eum itaque, ipsum libero omnis quisquam officiis et dolorum non explicabo mollitia! Suscipit, voluptates!</p>
-        </figcaption>
-        </span>
-        
-        <span class="flex-col">
-         <img src="/dist/img/sports-5.png" class="h-[50vh] w-full transition-transform duration-500 ease-in-out hover:scale-110 hover:rounded-xl">
-        <figcaption>
-          <h3 class="font-extrabold tex-xl p-[10px]">Others sports to be considerd in the next RIO Olympic</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus nobis ullam, nesciunt dolores in voluptatum odit, eum itaque, ipsum libero omnis quisquam officiis et dolorum non explicabo mollitia! Suscipit, voluptates!</p>
-        </figcaption>
-        </span>
-        
-        <span class="flex-col">
-         <img src="/dist/img/sports-6.png" class="h-[50vh] w-full transition-transform duration-500 ease-in-out hover:scale-110 hover:rounded-xl">
-        <figcaption>
-          <h3 class="font-extrabold tex-xl p-[10px]">Taekwondo Over Boxing</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus nobis ullam, nesciunt dolores in voluptatum odit, eum itaque, ipsum libero omnis quisquam officiis et dolorum non explicabo mollitia! Suscipit, voluptates!</p>
-        </figcaption>
-        </span>
-      </div>
-    </div>
- </section>
-
-   <!--fourth section TECHNOLOGY-->
-   <h3 class="font-extrabold text-2xl p-[20px]" >TECHNOLOGY</h3>
-<section  class="bg-gray-100 flex items-center justify-center min-h-screen">
-    
-    <div>
-      <div class="flex gap-5 mx-5 my-10">
-        <span class="flex-col">
-        <img src="/dist/img/tech-1.png"  class="h-[50vh] w-full transition-transform duration-500 ease-in-out hover:scale-110 hover:rounded-xl">
-        <figcaption>
-          <h3 class="font-extrabold tex-xl p-[10px]">Nigeria Ruling the Tech world</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus nobis ullam, nesciunt dolores in voluptatum odit, eum itaque, ipsum libero omnis quisquam officiis et dolorum non explicabo mollitia! Suscipit, voluptates!</p>
-        </figcaption>
-        </span>
-        
-        <span class="flex-col">
-         <img src="/dist/img/tech-2.png" class="h-[50vh] w-full transition-transform duration-500 ease-in-out hover:scale-110 hover:rounded-xl">
-        <figcaption>
-          <h3 class="font-extrabold tex-xl p-[10px]">Blockfuse Labs latest colaborations</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus nobis ullam, nesciunt dolores in voluptatum odit, eum itaque, ipsum libero omnis quisquam officiis et dolorum non explicabo mollitia! Suscipit, voluptates!</p>
-        </figcaption>
-        </span>
-        
-        <span class="flex-col">
-         <img src="/dist/img/tech-3.png" class="h-[50vh] w-full transition-transform duration-500 ease-in-out hover:scale-110 hover:rounded-xl">
-        <figcaption>
-          <h3 class="font-extrabold tex-xl p-[10px]">Exploring mars</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus nobis ullam, nesciunt dolores in voluptatum odit, eum itaque, ipsum libero omnis quisquam officiis et dolorum non explicabo mollitia! Suscipit, voluptates!</p>
-        </figcaption>
-        </span>
-      </div>
-
-
-      <div class="flex gap-5 mx-5 my-10">
-        <span class="flex-col">
-        <img src="/dist/img/tech-4.png" class="h-[50vh] w-full transition-transform duration-500 ease-in-out hover:scale-110 hover:rounded-xl">
-        <figcaption>
-          <h3 class="font-extrabold tex-xl p-[10px]">Electric panels to be replaced with new inventions</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus nobis ullam, nesciunt dolores in voluptatum odit, eum itaque, ipsum libero omnis quisquam officiis et dolorum non explicabo mollitia! Suscipit, voluptates!</p>
-        </figcaption>
-        </span>
-        
-        <span class="flex-col">
-         <img src="/dist/img/tech-5.png" class="h-[50vh] w-full transition-transform duration-500 ease-in-out hover:scale-110 hover:rounded-xl">
-        <figcaption>
-          <h3 class="font-extrabold tex-xl p-[10px]"> ZH45-Bulb</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus nobis ullam, nesciunt dolores in voluptatum odit, eum itaque, ipsum libero omnis quisquam officiis et dolorum non explicabo mollitia! Suscipit, voluptates!</p>
-        </figcaption>
-        </span>
-        
-        <span class="flex-col">
-         <img src="/dist/img/tech-6.png" class="h-[50vh] w-full transition-transform duration-500 ease-in-out hover:scale-110 hover:rounded-xl">
-        <figcaption>
-          <h3 class="font-extrabold tex-xl p-[10px]">2025 new inventions</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus nobis ullam, nesciunt dolores in voluptatum odit, eum itaque, ipsum libero omnis quisquam officiis et dolorum non explicabo mollitia! Suscipit, voluptates!</p>
-        </figcaption>
-        </span>
-      </div>
-    </div>
- </section>
-</div>
-
-
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>
