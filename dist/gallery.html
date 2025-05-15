@@ -5,13 +5,81 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./style.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="m-0 p-0 box-border overflow-x-clip font-serif">
 
+  <nav class="flex justify-around items-center h-full w-full p-3 shadow-sm shadow-gray-300 scale-125 px-20 my-3">
+        
+        <img src="./img/logo.png" alt="logo" class="h-[90%] w-32 object-cover" />
+        <div class="hidden md:block">
+          <ul class="flex  justify-center items-center text-[0.7rem] font-semibold gap-2">
+            <li>
+              <a href="" class="text-blue-400 font-bold hover:border-b-2 border-solid border-blue-600">HOME</a>
+            </li>
+            <li>
+              <a href="" class="text-gray-400 hover:text-black duration-200 hover:border-b-[1px] border-solid border-blue-600 hover:scale-110">CONTENT</a>
+            </li>
+            <li>
+              <a href="gallery.html" class="text-gray-400 hover:text-black duration-200 hover:border-b-[1px] border-solid border-blue-600">TRENDING</a>
+            </li>
+            <li>
+              <a href="" class="text-gray-400 hover:text-black duration-200 hover:border-b-[1px] border-solid border-blue-600">GUIDES</a>
+            </li>
+            <li>
+              <a href="#gallery" class="text-gray-400 hover:text-black duration-200 hover:border-b-[1px] border-solid border-blue-600">GALLERY</a>
+            </li>
+            <li>
+              <a href="" class="text-gray-400 hover:text-black duration-200 hover:border-b-[1px] border-solid border-blue-600">ABOUT US</a>
+            </li>
+            <li>
+              <a href="" class="text-gray-400 hover:text-black duration-200 ease-out hover:border-b-[1px] border-solid border-blue-600">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+        <div class="hidden md:block">
+          <div class="flex justify-center items-center gap-3">
+            <ul class="flex justify-center items-center gap-1">
+              <li>
+                <a href="">
+                  <img class="size-3" src="./img/icons8-facebook-logo-50 (2).png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href=""><img class="size-3 object-cover" src="./img/icons8-instagram-50 (2).png" alt="" /></a>
+              </li>
+
+              <li>
+                <a href=""><img src="./img/icons8-youtube-50 (2).png" class="size-3 object-cover" alt="" /></a>
+              </li>
+
+              <li>
+                <a href=""><img src="./img/icons8-twitter-50 (2).png" class="size-3 object-cover" alt="" /></a>
+              </li>
+              <li>
+                <a href=""><img src="./img/icons8-tik-tok-24.png" class="size-3 object-cover" alt="" /></a>
+              </li>
+            </ul>
+            <div>
+              <!-- <img src="/dist/img/icons8-search-50 (1).png" class="object-cover size-4 cursor-pointer" alt="" /> -->
+            </div>
+          </div>
+        </div>
+        <div class="md:hidden block">
+          <div class="flex justify-center gap-1 items-center">
+            <div class="text-gray-400">MENU</div>
+            <div class="flex flex-col justify-center gap-[2px]">
+              <div class="w-[25px] h-[3px] rounded-full bg-[#17005e]"></div>
+              <div class="w-[25px] h-[3px] rounded-full bg-[#17005e]"></div>
+              <div class="w-[25px] h-[3px] rounded-full bg-[#17005e]"></div>
+            </div>
+          </div>
+        </div>
+      </nav>
   
-          <div class="lg:grid grid-cols-3 gap-5 mx-5 my-10">
+          <div class="lg:grid grid-cols-3 gap-10 lg:mx-20 mx-5 my-10">
             <span class="flex-col">
               <div class="overflow-hidden">
                 <img
@@ -284,6 +352,134 @@
   </div>
 </div>
 
-</body>
 
+    <!-- footer -->
+    <footer class="w-[100vw] flex flex-col">
+      <!-- first row -->
+      <div class="lg:grid grid-cols-3 w-full h-[90%] bg-black text-white">
+        <!-- first col -->
+        <div
+          class="col-start-1 col-span-1 flex flex-col items-start justify-evenly p-6">
+          <div>
+            <img src="./img/logo.png" alt="" class="w-52 object-cover" />
+          </div>
+          <div>
+            <p class="text-left leading-5">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
+              quibusdam dicta neque vitae recusandae. Obcaecati veniam,
+              officiis, corporis
+            </p>
+          </div>
+          <div>
+            <ul class="flex justify-center items-center gap-1">
+              <li>
+                <a href="">
+                  <img
+                    class="size-7"
+                    src="./img/icons8-facebook-logo-50 (2).png"
+                    alt="" />
+                </a>
+              </li>
+              <li>
+                <a href=""
+                  ><img
+                    class="size-7 object-cover"
+                    src="./img/icons8-instagram-50 (2).png"
+                    alt=""
+                /></a>
+              </li>
+
+              <li>
+                <a href=""
+                  ><img
+                    src="./img/icons8-youtube-50 (2).png"
+                    class="size-7 object-cover"
+                    alt=""
+                /></a>
+              </li>
+
+              <li>
+                <a href=""
+                  ><img
+                    src="./img/icons8-twitter-50 (2).png"
+                    class="size-7 object-cover"
+                    alt=""
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img
+                    src="/dist/img/icons8-tik-tok-24.png"
+                    class="size-7 object-cover"
+                    alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- second col -->
+        <div class="col-start-2 col-span-1 flex flex-col justify-evenly p-6">
+          <div class="grid grid-cols-2">
+            <div
+              class="col-start-1 col-span-1 flex flex-col space-y-5 h-[200px]">
+              <span>HOME</span>
+              <span>ABOUT US</span>
+              <span>GALLERY</span>
+              <span>CONTACT US</span>
+            </div>
+            <div
+              class="col-start-2 col-span-1 flex flex-col space-y-5 h-[200px]">
+              <span>COMMENTS</span><span>GUIDES</span><span>STORIES</span>
+            </div>
+          </div>
+          <div class="flex">
+            <button
+              class="mr-5 h-14 w-72 bg-gray-500 rounded-lg hover:brightness-95 hover:text-gray-600">
+              <span
+                class="text-nowrap text-center px-5 flex justify-center items-center gap-10"
+                >SUPPORT US
+                <img
+                  src="./img/icons8-swap-100.png"
+                  class="size-6 rotate-180"
+                  alt=""
+              /></span>
+            </button>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing </span>
+          </div>
+        </div>
+
+        <!-- third column -->
+        <div class="flex flex-col items-start justify-evenly p-6">
+          <span class="flex items-center">
+            <!-- <img src="/dist/img/icons8-telegram-50 (1).png" -->
+              <!-- class="size-6 object-cover" -->
+              <!-- alt="" /> -->
+            <span>Subscribe Now</span></span
+          >
+          <span
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
+            similique! Lorem ipsum dolor sit amet consectetur.</span>
+          <div class="flex w-full items-center">
+            <input
+              type="text"
+              class="h-20 w-[70%] p-7"
+              placeholder="Your Email Address" />
+            <button type="submit" class="w-[30%] text-white bg-gray-900 h-20">
+              SUBSCRIBE
+            </button>
+          </div>
+          <div class="flex items-center gap-2">
+            <span>Want to become a CONTRIBUTOR?</span><a href="">CLICK HERE</a>
+          </div>
+        </div>
+      </div>
+      <!-- second row -->
+      <div class="w-full h-[10%] bg-slate-600">
+        <p class="text-white font-semibold mt-2 mx-auto text-center">
+          TECH TITANS ARE THE BEST IN BLOCKFUSE LABS!
+        </p>
+      </div>
+    </footer>
+
+</body>
 </html>
