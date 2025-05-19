@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Reset autoplay timer
   function resetAutoPlay() {
     clearInterval(autoPlayInterval);
-    autoPlayInterval = setInterval(nextSlide, 4000);
+    autoPlayInterval = setInterval(nextSlide, 5000);
   }
 
   // Event listeners
